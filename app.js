@@ -418,7 +418,7 @@ app.get("/api/discover/tv", async (req, res) => {
 
 // Запуск сервера
 sequelize.sync().then(() => {
-  app.listen(process.env.port, () => {
+  app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`);
   });
 });
